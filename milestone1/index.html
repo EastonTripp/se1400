@@ -5,6 +5,33 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
     <title>Website Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, var(--color1, #ADD8E6), var(--color2, #FADADD));
+        }
+        header, nav, main, footer {
+            width: 100%;
+        }
+        nav a {
+            margin: 0 10px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const randomColor = () => `hsl(${Math.random() * 360}, 100%, 50%)`;
+            document.documentElement.style.setProperty('--color1', randomColor());
+            document.documentElement.style.setProperty('--color2', randomColor());
+        });
+    </script>
 </head>
 
 <body>
