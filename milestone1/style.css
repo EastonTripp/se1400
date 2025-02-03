@@ -1,50 +1,57 @@
-/* CSS HEX */
---platinum: #dcdcdd;
---french-gray: #c5c3c6;
---outer-space: #46494c;
---paynes-gray: #4c5c68;
---chefchaouen-blue: #5386e4;
---cornflower-blue: #6391e6;
+/* Global Styles */
+body {
+    background-color: #c5c3c6;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+}
 
-/* CSS HSL */
---platinum: hsla(240, 1%, 86%, 1);
---french-gray: hsla(280, 3%, 77%, 1);
---outer-space: hsla(210, 4%, 29%, 1);
---paynes-gray: hsla(206, 16%, 35%, 1);
---chefchaouen-blue: hsla(219, 73%, 61%, 1);
---cornflower-blue: hsla(219, 72%, 65%, 1);
+/* Header Styles */
+header {
+    background-color: #dcdcdd;
+    color: black;
+    font-family: Georgia, serif;
+}
 
-/* SCSS HEX */
-$platinum: #dcdcddff;
-$french-gray: #c5c3c6ff;
-$outer-space: #46494cff;
-$paynes-gray: #4c5c68ff;
-$chefchaouen-blue: #5386e4ff;
-$cornflower-blue: #6391e6ff;
+/* Header h1 Styles */
+header h1 {
+    line-height: 140%;
+    padding: 0.5rem;
+}
 
-/* SCSS HSL */
-$platinum: hsla(240, 1%, 86%, 1);
-$french-gray: hsla(280, 3%, 77%, 1);
-$outer-space: hsla(210, 4%, 29%, 1);
-$paynes-gray: hsla(206, 16%, 35%, 1);
-$chefchaouen-blue: hsla(219, 73%, 61%, 1);
-$cornflower-blue: hsla(219, 72%, 65%, 1);
+/* Navigation Styles */
+nav {
+    font-weight: bold;
+    background-color: #F3F3F3;
+}
 
-/* SCSS RGB */
-$platinum: rgba(220, 220, 221, 1);
-$french-gray: rgba(197, 195, 198, 1);
-$outer-space: rgba(70, 73, 76, 1);
-$paynes-gray: rgba(76, 92, 104, 1);
-$chefchaouen-blue: rgba(83, 134, 228, 1);
-$cornflower-blue: rgba(99, 145, 230, 1);
+/* h2 Styles */
+h2 {
+    color: #424242;
+    font-family: Georgia, serif;
+}
 
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #dcdcddff, #c5c3c6ff, #46494cff, #4c5c68ff, #5386e4ff, #6391e6ff);
-$gradient-right: linear-gradient(90deg, #dcdcddff, #c5c3c6ff, #46494cff, #4c5c68ff, #5386e4ff, #6391e6ff);
-$gradient-bottom: linear-gradient(180deg, #dcdcddff, #c5c3c6ff, #46494cff, #4c5c68ff, #5386e4ff, #6391e6ff);
-$gradient-left: linear-gradient(270deg, #dcdcddff, #c5c3c6ff, #46494cff, #4c5c68ff, #5386e4ff, #6391e6ff);
-$gradient-top-right: linear-gradient(45deg, #dcdcddff, #c5c3c6ff, #46494cff, #4c5c68ff, #5386e4ff, #6391e6ff);
-$gradient-bottom-right: linear-gradient(135deg, #dcdcddff, #c5c3c6ff, #46494cff, #4c5c68ff, #5386e4ff, #6391e6ff);
-$gradient-top-left: linear-gradient(225deg, #dcdcddff, #c5c3c6ff, #46494cff, #4c5c68ff, #5386e4ff, #6391e6ff);
-$gradient-bottom-left: linear-gradient(315deg, #dcdcddff, #c5c3c6ff, #46494cff, #4c5c68ff, #5386e4ff, #6391e6ff);
-$gradient-radial: radial-gradient(#dcdcddff, #c5c3c6ff, #46494cff, #4c5c68ff, #5386e4ff, #6391e6ff);
+/* Definition Term (dt) Styles */
+dt {
+    color: #003058;
+    font-weight: bold;
+}
+
+/* .ut Class Styles */
+.ut {
+    color: #BA1C21;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    font-size: 0.70rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Wrapper Styles */
+#wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
