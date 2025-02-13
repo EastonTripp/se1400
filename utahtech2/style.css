@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    background-color: #c5c3c6;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+    background: linear-gradient(to bottom, #eeeeee, #ffffff); /* Gradient background */
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    background-color: #dcdcdd;
+    color: black;
+    font-family: Georgia, serif;
+}
+
+/* Header h1 Styles */
+header h1 {
+    line-height: 140%;
+    padding: 0.5rem;
+    background-image: url('utahtechlogo.png'); /* Logo background */
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 1em;
+    background-origin: content-box;
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Navigation Styles */
+nav {
+    font-weight: bold;
+    background-color: #F3F3F3;
+    padding: 0.5rem 2rem 0.5rem 0.5rem; /* Added padding */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from nav links */
+}
+
+/* h2 Styles */
+h2 {
+    color: #424242;
+    font-family: Georgia, serif;
+}
+
+/* h3 Styles */
+h3 {
+    color: #003058; /* Updated h3 text color */
+}
+
+/* Definition Term (dt) Styles */
+dt {
+    color: #003058;
+    font-weight: bold;
+}
+
+/* .ut Class Styles */
+.ut {
+    color: #BA1C21;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    font-size: 0.70rem;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem; /* Added padding to footer */
+}
+
+/* Wrapper Styles */
+#wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff; /* Added background color */
+    min-width: 960px; /* Minimum width */
+    max-width: 2048px; /* Maximum width */
+    box-shadow: 0px 3px 3px rgba(66,66,66,0.3); /* Added box-shadow */
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem; /* Added padding to main content */
+}
+
+/* Hero Section Styles (Home, Students, Faculty) */
+#homehero, #studenthero, #facultyhero {
+    height: 300px;
+    background-size: cover; /* Make background image cover the div */
+    background-position: center; /* Center the background image */
+}
+
+#homehero {
+    background-image: url('homehero.jpg'); /* Background for Home */
+}
+
+#studenthero {
+    background-image: url('studenthero.jpg'); /* Background for Students */
+}
+
+#facultyhero {
+    background-image: url('facultyhero.jpg'); /* Background for Faculty */
+}
