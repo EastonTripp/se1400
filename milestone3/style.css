@@ -1,0 +1,78 @@
+/* Reset basic margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Set up the grid layout */
+body {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr); /* Your specified grid columns */
+    grid-template-rows: auto;
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+
+/* Grid items styling */
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Specific grid areas */
+.header {
+    grid-column: 2 / 8; /* The header spans from column 2 to 8 */
+    grid-row: 1;
+}
+
+.nav {
+    grid-column: 1 / 2; /* The navigation spans the first column */
+    grid-row: 2 / 4;
+}
+
+.main {
+    grid-column: 2 / 8; /* Main content spans columns 2 to 8 */
+    grid-row: 2;
+}
+
+.article {
+    background-color: rgba(0, 123, 255, 0.3); /* Light blue background for articles */
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    grid-column: 8 / 9; /* Sidebar spans the last column */
+    grid-row: 2 / 4;
+}
+
+.footer {
+    grid-column: 2 / 8; /* Footer spans columns 2 to 8 */
+    grid-row: 4;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    .header, .footer {
+        grid-column: 1 / 2; /* Full width for header and footer */
+    }
+
+    .nav, .sidebar {
+        grid-column: 1 / 2; /* Full width for nav and sidebar */
+    }
+}
