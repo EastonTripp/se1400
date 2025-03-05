@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #2c2f38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    width: 90%;
+    max-width: 900px;
+    background-color: #3c3f47;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.nav-item.circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.nav-item.rectangle {
+    width: 60px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Content Grid */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    align-items: stretch; /* Ensures both boxes have the same height */
+}
+
+/* Text & Image Boxes */
+.text-box,
+.image-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures both elements stretch to the same height */
+}
+
+/* Paragraph inside Text Box */
+.paragraph {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #d1d1d1;
+    border-radius: 5px;
+    flex-grow: 1; /* Makes sure the text fills the available space */
+}
+
+/* Image Box */
+.image-box {
+    align-items: center;
+    text-align: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    flex-grow: 1; /* Makes image area expand to match the text box */
+}
+
+/* Caption */
+.caption {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    color: black;
+    padding: 5px;
+}
+
+/* Footer */
+.footer-text {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
