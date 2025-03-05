@@ -1,78 +1,116 @@
-/* Reset basic margins and paddings */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic page styling */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* Set up the grid layout */
-body {
-    display: grid;
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr); /* Your specified grid columns */
-    grid-template-rows: auto;
-    gap: 20px; /* Space between grid items */
-    padding: 20px;
-}
-
-/* Grid items styling */
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 8px;
+    background-color: #2c2f38;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #333;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 20px;
 }
 
-/* Specific grid areas */
-.header {
-    grid-column: 2 / 8; /* The header spans from column 2 to 8 */
-    grid-row: 1;
+/* Main Container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    width: 90%;
+    max-width: 900px;
+    background-color: #3c3f47;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.nav {
-    grid-column: 1 / 2; /* The navigation spans the first column */
-    grid-row: 2 / 4;
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
-.main {
-    grid-column: 2 / 8; /* Main content spans columns 2 to 8 */
-    grid-row: 2;
+.nav-item.circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
 }
 
-.article {
-    background-color: rgba(0, 123, 255, 0.3); /* Light blue background for articles */
-    margin-bottom: 10px;
+.nav-item.rectangle {
+    width: 60px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
 }
 
-.sidebar {
-    grid-column: 8 / 9; /* Sidebar spans the last column */
-    grid-row: 2 / 4;
+/* Content Grid */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    align-items: stretch; /* Ensures both boxes have the same height */
 }
 
-.footer {
-    grid-column: 2 / 8; /* Footer spans columns 2 to 8 */
-    grid-row: 4;
+/* Text & Image Boxes */
+.text-box,
+.image-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures both elements stretch to the same height */
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr; /* Single column layout for small screens */
-    }
+/* Paragraph inside Text Box */
+.paragraph {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #d1d1d1;
+    border-radius: 5px;
+    flex-grow: 1; /* Makes sure the text fills the available space */
+}
 
-    .header, .footer {
-        grid-column: 1 / 2; /* Full width for header and footer */
-    }
+/* Image Box */
+.image-box {
+    align-items: center;
+    text-align: center;
+}
 
-    .nav, .sidebar {
-        grid-column: 1 / 2; /* Full width for nav and sidebar */
-    }
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    flex-grow: 1; /* Makes image area expand to match the text box */
+}
+
+/* Caption */
+.caption {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    color: black;
+    padding: 5px;
+}
+
+/* Footer */
+.footer-text {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: 12px;
+    text-align: center;
 }
