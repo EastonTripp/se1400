@@ -2,51 +2,63 @@
 <html lang="en">
 <head>
     <title>Utah Tech University</title>
-     <meta charset="utf-8">
-     <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 </head>
-<body> 
+<body>
     <div id="wrapper">
-    <div id="bluebar"></div>
-    <div id="greybar"></div>
-    <header>
-    <h1><a href="alumni.html" class="header-link">Utah Tech University</a></h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="students.html">Students</a></li>
-            <li><a href="faculty.html">Faculty</a></li>
-            <li><a href="alumni.html">Alumni</a></li>
-        </ul>    
-    </nav>
-    <div id="alumnihero"></div>
-    <main>
-        <h2>Join Alumni Mailing List</h2>
-        <h3>Request Alumni Newsletter</h3>
-            Required information is marked with an asterisk(*).
-             <form action="https://kearl.net/se1400/mail.php" method="post">
+        <div id="bluebar"></div>
+        <div id="greybar"></div>
+
+        <header>
+            <h1><a href="alumni.html" class="header-link">Utah Tech University</a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+            </ul>
+        </nav>
+
+        <div id="alumnihero"></div>
+
+        <main>
+            <h2>Join Alumni Mailing List</h2>
+            <h3>Request Alumni Newsletter</h3>
+            <p>Required information is marked with an asterisk (*).</p>
+
+            <form action="https://kearl.net/se1400/mail.php" method="post">
                 <label for="myFname">*First Name:</label>
-                <input type="text" name="myFName:" id="myFname" required>
+                <input type="text" name="myFName" id="myFname" required>
+
                 <label for="myLname">*Last Name:</label>
-                <input type="text" name="myLName:" id="myLname" required>
+                <input type="text" name="myLName" id="myLname" required>
+
                 <label for="myEmail">*E-mail:</label>
-                <input type="email" name="myEmail:" id="myEmail" required>
+                <input type="email" name="myEmail" id="myEmail" required>
+
                 <label for="myPhone">Phone:</label>
-                <input type="tel" name="myPhone:" id="myPhone">
+                <input type="tel" name="myPhone" id="myPhone">
+
                 <label for="graduationdate">Graduation Date:</label>
-                <input type="date" name="Graduation Date" id="graduationdate">
-                <label for="myComments">*Coments:</label>
-                <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
-                <input type="submit" name="mySubmit" id="mySubmit" value="send">
+                <input type="date" name="gradDate" id="graduationdate">
+
+                <label for="myComments">*Comments:</label>
+                <textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
+
+                <input type="submit" name="mySubmit" id="mySubmit" value="Send">
             </form>
-    </main>
-    <footer>
-        Copyright &copy; 2025 Utah Tech University<br>
-        <a href="26trippeasg@washk12.org">26trippeasg@washk12.org</a>
-    </footer>
+        </main>
+
+        <footer>
+            Copyright &copy; 2025 Utah Tech University<br>
+            <a href="mailto:26trippeasg@washk12.org">26trippeasg@washk12.org</a>
+        </footer>
     </div>
 </body>
 </html>
