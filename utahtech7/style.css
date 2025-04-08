@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+body  {
+    background: linear-gradient(to bottom, #eeeeee, #FFFFFF); 
+    background-attachment: fixed;
+    color:#666666;
+    font-family: Verdana, Arial;
+    margin: 0px;
+ }
+
+header {
+    background-color:#003058;
+    color:#FFFFFF;
+    font-family: Georgia;
+    text-decoration: none;
+    grid-column: 2 / -2;
+    grid-row: 1 / 2;
+}
+
+h1 {
+    background-image: url(utahtechimages/utahtechlogo.svg);
+    background-position:right;
+    background-repeat:no-repeat;
+    background-origin:content-box;
+    line-height:140%;
+    padding-left:1em;
+    padding: 0.5rem;
+    margin:0; 
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav {
+    font-weight: bold;
+    text-decoration: none;
+    grid-column: 2 / -2;
+    grid-row: 2 / 3;
+    background-color: #424242;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #BA1C21;
+}
+
+h2{
+    color:#424242;
+    font-family: Georgia;
+}
+
+form {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 200px 1fr;
+    gap: .75rem;
+    width: 100%;
+    margin: 20px;
+}
+
+input, textarea{
+    font-size: 1rem;
+    padding: 10px;
+    color: #666666;
+    background-color: #fafafa;
+    border: none;  
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+label {
+    padding: 10px;
+    text-align: right;
+}
+
+#mySubmit{
+    width: 10rem;
+    grid-column: 2 / 3;
+    padding: 10px;
+    background-color: #fafafa;
+    color: #666666;
+    border: none;
+    cursor: pointer;
+}
+
+#mysubmit:hover {
+    background-color: #BA1C21
+}
+
+h3{
+    color: #003058;
+}
+
+h2, h3 {
+    text-align: left;
+}
+
+table {
+    margin: 0 auto;
+    border: 1px solid #424242;
+    width: 100%;
+    border-collapse: collapse;
+    align-items: center;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid #424242;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+}
+
+td.text {
+    text-align: left !important;
+}
+
+#alumnihero {
+    background-image: url(../utahtechimages/alumnihero.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 1 / 9;
+    grid-row: 3 / 4;
+}
+
+#homehero {
+    background-image: url(../utahtechimages/homehero.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 1 / 9;
+    grid-row: 3 / 4;
+}
+
+#bluebar {
+    background-color: #003058;
+    grid-row: 1 / 2;
+    grid-column: 1 / 9;
+}
+
+#greybar {
+    background-color: #424242;
+    grid-row: 2 / 3;
+    grid-column: 1 / 9;
+}
+
+#studenthero {
+    background-image: url(../utahtechimages/studenthero.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 1 / 9;
+    grid-row: 3 / 4;
+}
+
+#facultyhero {
+    background-image: url(../utahtechimages/facultyhero.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 1 / 9;
+    grid-row: 3 / 4;
+}
+
+main{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-column: 2 / -2;
+    grid-row: 4 / 5;
+    background-color: #FFFFFF;
+}
+
+main img {
+    padding-left: 2rem;
+    float: right;
+}
+
+dt{
+    color:#003058;
+    font-weight: Bold;
+}
+
+.ut{
+    color:#BA1C21;
+    font-weight: bold;
+}
+
+footer{
+    font-size:.70rem;
+    font-style: italic;
+    text-align: Center;
+    padding: 1rem;
+    grid-column: 2 / -2;
+    grid-row: 5 / 6;
+}
+
+#wrapper{
+    display: grid;
+    grid-auto-rows: minmax(0px, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+@media screen and (max-width: 1100px) {
+    #wrapper {
+        display: grid;
+        grid-auto-rows: minmax(0px, auto);
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+        position: static;
+    }
+    nav ul {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    #homehero {
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+    #studenthero{
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+    #facutlyhero{
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+    main img {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+    }
+    #alumnihero{
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        background-image: none;
+        text-align: center;
+    }
+    nav {
+        grid-row: 2 / 3;
+        grid-column: 1 / 9;
+    }
+    #homehero {
+        display: none;
+    }
+    #studenthero{
+        display: none;
+    }
+    #facutlyhero{
+        display: none;
+    }
+    #alumnihero{
+        display: none;
+    }
+}
