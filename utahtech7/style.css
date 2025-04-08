@@ -20,7 +20,7 @@ header {
 }
 
 h1 {
-    background-image: url(utahtechimages/utahtechlogo.svg);
+    background-image: url(../utahtechimages/utahtechlogo.svg);
     background-position:right;
     background-repeat:no-repeat;
     background-origin:content-box;
