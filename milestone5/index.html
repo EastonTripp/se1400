@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ink & Ignition - Official Game Site</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <!-- Navigation Bar -->
     <header class="nav-bar">
-      <div class="nav-item circle"></div>
-      <div class="nav-item rectangle"><a href="#home">Home</a></div>
-      <div class="nav-item rectangle"><a href="#gameplay">Gameplay</a></div>
-      <div class="nav-item rectangle"><a href="#lore">Lore</a></div>
-      <div class="nav-item rectangle"><a href="#features">Features</a></div>
-      <div class="nav-item rectangle"><a href="#community">Community</a></div>
+      <div class="logo"></div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+
+      <nav class="nav-links">
+        <div class="nav-item rectangle"><a href="#home">Home</a></div>
+        <div class="nav-item rectangle"><a href="#gameplay">Gameplay</a></div>
+        <div class="nav-item rectangle"><a href="#lore">Lore</a></div>
+        <div class="nav-item rectangle"><a href="#features">Features</a></div>
+        <div class="nav-item rectangle"><a href="#community">Community</a></div>
+      </nav>
     </header>
 
     <!-- Home Section -->
@@ -85,5 +90,14 @@
       <p>&copy; 2025 JEMM Studios - Ink & Ignition. All Rights Reserved. | <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
     </footer>
   </div>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
