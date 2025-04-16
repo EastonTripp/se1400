@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Utah Tech University :: Shop</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="bluebar"></div>
+        <div id="greybar"></div>
+        <header>
+            <h1><a href="index.html">Utah Tech University</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>  
+        </nav>
+        <div id="shophero"></div>
+        <main>
+            <h2>Utah Tech Bookstore</h2>
+            <div id="shoppingcart">
+                <div>
+                    <img src="images/hoodie1.jpg" alt="Heather grey hoodie with Utah Tech logo">
+                    <h3>Utah Tech Hoodie</h3>
+                    <p>Heather grey hoodie with Utah Tech logo</p>
+                    <p>$79.99</p>
+                    <button class="snipcart-add-item"
+                        data-item-id="hoodie1"
+                        data-item-price="79.99"
+                        data-item-description="Heather grey hoodie with Utah Tech logo"
+                        data-item-image="images/hoodie1.jpg"
+                        data-item-name="Utah Tech Hoodie">
+                        Add to cart
+                    </button>
+                </div> 
+                <div>
+                    <img src="images/hoodie2.jpg" alt="Heather grey hoodie with Utah Tech logo">
+                    <h3>Utah Tech Hoodie</h3>
+                    <p>Heather grey hoodie with Utah Tech logo</p>
+                    <p>$89.99</p>
+                    <button class="snipcart-add-item"
+                        data-item-id="hoodie2"
+                        data-item-price="89.99"
+                        data-item-description="Heather grey hoodie with Utah Tech logo"
+                        data-item-image="images/hoodie2.jpg"
+                        data-item-name="Utah Tech Hoodie">
+                        Add to cart
+                    </button>
+                </div>
+                <div>
+                    <img src="images/hoodie3.jpg" alt="Heather grey hoodie with Utah Tech logo">
+                    <h3>Utah Tech Hoodie</h3>
+                    <p>Heather grey hoodie with Utah Tech logo</p>
+                    <p>$79.99</p>
+                    <button class="snipcart-add-item"
+                        data-item-id="hoodie3"
+                        data-item-price="79.99"
+                        data-item-description="Heather grey hoodie with Utah Tech logo"
+                        data-item-image="images/hoodie3.jpg"
+                        data-item-name="Utah Tech Hoodie">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; 2025 Utah Tech University<br>
+            <a href="mailto:porter.hancock@utahtech.edu">porter.hancock@utahtech.edu</a>
+        </footer>
+    </div>
+
+    <!-- Snipcart Integration -->
+    <script>
+        window.SnipcartSettings = {
+            publicApiKey: "ZjgyZGE1N2YtZDM2NC00ZmRlLWFlNGEtZGRkNmYzZmEyY2U0NjM4Nzk4NDM1NjgwNTI0MjM1",
+            loadStrategy: "on-user-interaction",
+        };
+
+        (function() {
+            const version = window.SnipcartSettings.version || "3.0";
+            const timeoutDuration = window.SnipcartSettings.timeoutDuration || 2750;
+            const domain = window.SnipcartSettings.domain || "cdn.snipcart.com";
+            const protocol = window.SnipcartSettings.protocol || "https";
+            const loadCSS = window.SnipcartSettings.loadCSS !== false;
+
+            const tooOldVersion = version.includes("v3.0.0-ci") || (version !== "3.0" && version.localeCompare("3.4.0", undefined, { numeric: true, sensitivity: "base" }) === -1);
+            const triggers = ["focus", "mouseover", "touchmove", "scroll", "keydown"];
+            let hasLoaded = false;
+
+            function loadSnipcart() {
+                if (hasLoaded) return;
+                hasLoaded = true;
+
+                const head = document.getElementsByTagName("head")[0];
+
+                let snipcartDiv = document.querySelector("#snipcart");
+                if (!snipcartDiv) {
+                    snipcartDiv = document.createElement("div");
+                    snipcartDiv.id = "snipcart";
+                    snipcartDiv.setAttribute("hidden", "true");
+                    document.body.appendChild(snipcartDiv);
+                }
+
+                if (!document.querySelector(`script[src^="${protocol}://${domain}"][src$="snipcart.js"]`)) {
+                    const script = document.createElement("script");
+                    script.src = `${protocol}://${domain}/themes/v${version}/default/snipcart.js`;
+                    script.async = true;
+                    head.appendChild(script);
+                }
+
+                if (loadCSS && !document.querySelector(`link[href^="${protocol}://${domain}"][href$="snipcart.css"]`)) {
+                    const link = document.createElement("link");
+                    link.rel = "stylesheet";
+                    link.type = "text/css";
+                    link.href = `${protocol}://${domain}/themes/v${version}/default/snipcart.css`;
+                    head.prepend(link);
+                }
+
+                if (!tooOldVersion) {
+                    snipcartDiv.dataset.apiKey = window.SnipcartSettings.publicApiKey;
+                }
+
+                triggers.forEach(evt => document.removeEventListener(evt, loadSnipcart));
+            }
+
+            if (window.SnipcartSettings.loadStrategy === "on-user-interaction") {
+                triggers.forEach(evt => document.addEventListener(evt, loadSnipcart));
+                setTimeout(loadSnipcart, timeoutDuration);
+            } else {
+                loadSnipcart();
+            }
+
+            document.readyState === "loading"
+                ? document.addEventListener("DOMContentLoaded", () => {})
+                : loadSnipcart();
+        })();
+    </script>
+</body>
+</html>
