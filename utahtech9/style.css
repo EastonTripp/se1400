@@ -22,7 +22,7 @@ header h1 {
     margin: 0;
     line-height: 140%;
     padding: 0.5rem 1em 0.5rem 1em;
-    background-image: url("images/utahtechlogo.svg");
+    background-image: url("../utahtechimages/utahtechlogo.svg");
     background-position: right;
     background-repeat: no-repeat;
     background-origin: content-box;
@@ -195,11 +195,11 @@ tr:nth-of-type(2n) {
     grid-column: 1/9;
 }
 
-#homehero     { background-image: url("images/homehero.jpg"); }
-#studenthero  { background-image: url("images/studenthero.jpg"); }
-#facultyhero  { background-image: url("images/facultyhero.jpg"); }
-#alumnihero   { background-image: url("images/alumnihero.jpg"); }
-#shophero     { background-image: url("images/shophero.jpg"); }
+#homehero     { background-image: url("../utahtechimages/homehero.jpg"); }
+#studenthero  { background-image: url("../utahtechimages/studenthero.jpg"); }
+#facultyhero  { background-image: url("../utahtechimages/facultyhero.jpg"); }
+#alumnihero   { background-image: url("../utahtechimages/alumnihero.jpg"); }
+#shophero     { background-image: url("../utahtechimages/shophero.jpg"); }
 
 /* Decorative bars */
 #bluebar {
