@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ink & Ignition - Official Game Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation Bar -->
+    <header class="nav-bar">
+      <div class="logo"></div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+
+      <nav class="nav-links">
+        <div class="nav-item rectangle"><a href="#home">Home</a></div>
+        <div class="nav-item rectangle"><a href="#gameplay">Gameplay</a></div>
+        <div class="nav-item rectangle"><a href="#lore">Lore</a></div>
+        <div class="nav-item rectangle"><a href="#features">Features</a></div>
+        <div class="nav-item rectangle"><a href="#community">Community</a></div>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="intro">
+      <h1>Welcome to Ink & Ignition</h1>
+      <p class="intro-text">A high-speed, high-stakes fusion of racing and artistic expression. Drift, race, and paint your way to victory!</p>
+      <a href="#gameplay" class="cta-button">Explore Gameplay</a>
+    </section>
+
+    <!-- Gameplay Section -->
+    <section id="gameplay" class="content-section">
+      <h2>Gameplay Overview</h2>
+      <div class="content-grid">
+        <div class="text-box">
+          <h3>Race, Drift, and Paint</h3>
+          <p>In Ink & Ignition, every race is a chance to leave your mark on the world. Choose your car, master the tracks, and use your speed to create stunning art through your tire tracks!</p>
+        </div>
+        <div class="image-box">
+          <picture>
+            <source media="(max-width: 768px)" srcset="gameplay-small.jpg">
+            <source media="(max-width: 992px)" srcset="gameplay-medium.jpg">
+            <img src="gameplay-default.jpg" alt="Ink & Ignition gameplay screenshot">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lore Section -->
+    <section id="lore" class="content-section">
+      <h2>Game Lore</h2>
+      <div class="content-grid">
+        <div class="text-box">
+          <h3>The Origins of Ink & Ignition</h3>
+          <p>Set in a dystopian future where creativity is suppressed, Ink & Ignition is the story of rebellious racers who use their skill and flair to fight back against an oppressive regime. Through their tire marks, they paint a future of freedom and expression.</p>
+        </div>
+        <div class="image-box">
+          <picture>
+            <source media="(max-width: 768px)" srcset="lore-small.jpg">
+            <source media="(max-width: 992px)" srcset="lore-medium.jpg">
+            <img src="lore-default.jpg" alt="Ink & Ignition lore scene">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="content-section">
+      <h2>Features</h2>
+      <ul class="features-list">
+        <li><strong>Dynamic Racing Tracks:</strong> Race through vibrant, ever-changing environments.</li>
+        <li><strong>Creative Tire Mark Art:</strong> Leave unique patterns on the track that influence the world around you.</li>
+        <li><strong>Customization:</strong> Personalize your car and gear to reflect your style and playstyle.</li>
+        <li><strong>Multiplayer Mode:</strong> Race against friends or challenge others online!</li>
+        <li><strong>In-Game Events:</strong> Participate in special events to unlock exclusive rewards and challenges.</li>
+      </ul>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="content-section">
+      <h2>Join the Community</h2>
+      <p>Be part of the growing Ink & Ignition community. Join our social media pages, check out community events, and get updates on new content!</p>
+      <a href="https://www.instagram.com/inkandignition" class="cta-button" target="_blank">Follow Us on Instagram</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-text">
+      <p>&copy; 2025 JEMM Studios - Ink & Ignition. All Rights Reserved. | <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </div>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
