@@ -1,249 +1,276 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Scroll Padding for anchor links */
-  html {
-    scroll-padding-top: 100px;
-  }
-  
-  /* Body Styling */
-  body {
-    background-color: #1a1a1a;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  /* Main Container */
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    background-color: #242424;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  /* Navigation Bar */
-  .nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  
-  .logo {
-    width: 120px; /* Enlarged logo size */
-    height: 60px;
-    background-image: url("../base_logo.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  /* Toggle Button (hamburger menu) */
-  .nav-toggle {
-    background: none;
-    color: white;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
-    display: none;
-  }
-  
-  /* Nav Links */
-  .nav-links {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .nav-item.rectangle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    background-color: #fff;
-    border-radius: 5px;
-    margin: 5px 0;
-  }
-  
-  .nav-item.rectangle a {
-    color: #000;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  /* Intro Section */
-  .intro {
-    text-align: center;
-    padding: 40px 0;
-  }
-  
-  .intro h1 {
-    font-size: 48px;
-    font-family: 'Georgia', serif;
-    margin-bottom: 20px;
-  }
-  
-  .intro-text {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    background-color: #ff5722;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-  }
-  
-  .cta-button:hover {
-    background-color: #e64a19;
-  }
-  
-  /* Content Sections */
-  .content-section {
-    padding: 40px 0;
-  }
-  
-  .content-section h2 {
-    font-size: 36px;
-    font-family: 'Georgia', serif;
-    margin-bottom: 20px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scroll Padding for anchor links */
+html {
+  scroll-padding-top: 100px;
+}
+
+/* Body Styling */
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #242424;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 120px; /* Enlarged logo size */
+  height: 60px;
+  background-image: url("../base_logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Toggle Button (hamburger menu) */
+.nav-toggle {
+  background: none;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-item.rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.nav-item.rectangle a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.intro h1 {
+  font-size: 48px;
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #ff5722;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 40px 0;
+}
+
+.content-section h2 {
+  font-size: 36px;
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.text-box,
+.image-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  color: #000;
+  border: 2px solid #333; /* Dark gray border around white boxes */
+}
+
+.text-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.features-list {
+  list-style: none;
+  font-size: 14px;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+}
+
+.image-box {
+  text-align: center;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+/* Footer */
+.footer-text {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-text a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+/* Community Section Button Fix */
+#community .cta-button {
+  margin-top: 30px; /* Increased top margin for more space from the text */
+  margin-bottom: 50px; /* Keep some space from the footer */
+  display: inline-block;
+  padding: 12px 25px; /* Adjusted padding for better clickability */
+}
+
+/* Tablet (stack content grid) */
+@media (max-width: 992px) {
   .content-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  
-  .text-box,
-  .image-box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    color: #000;
-    border: 2px solid #333; /* Dark gray border around white boxes */
-  }
-  
-  .text-box h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .text-box p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  
-  .features-list {
-    list-style: none;
-    font-size: 14px;
-  }
-  
-  .features-list li {
-    margin-bottom: 10px;
-  }
-  
-  .image-box {
-    text-align: center;
-  }
-  
-  .image-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: contain;
-  }
-  
-  /* Footer */
-  .footer-text {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .footer-text a {
-    color: #ff5722;
-    text-decoration: none;
-  }
-  
-  .footer-text a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Community Section Button Fix */
-  #community .cta-button {
-    margin-top: 30px; /* Increased top margin for more space from the text */
-    margin-bottom: 50px; /* Keep some space from the footer */
-    display: inline-block;
-    padding: 12px 25px; /* Adjusted padding for better clickability */
-  }
-  
-  /* Tablet (stack content grid) */
-  @media (max-width: 992px) {
-    .content-grid {
       grid-template-columns: 1fr;
-    }
   }
-  
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    .intro h1 {
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .intro h1 {
       font-size: 36px;
-    }
-  
-    .cta-button {
+  }
+
+  .cta-button {
       font-size: 14px;
-    }
-  
-    .intro-text,
-    .text-box p,
-    .features-list {
+  }
+
+  .intro-text,
+  .text-box p,
+  .features-list {
       font-size: 16px;
-    }
-  
-    .content-section h2 {
+  }
+
+  .content-section h2 {
       font-size: 28px;
-    }
-  
-    .nav-toggle {
+  }
+
+  .nav-toggle {
       display: block;
-    }
-  
-    .nav-links {
+  }
+
+  .nav-links {
       flex-direction: column;
       width: 100%;
       display: none;
       gap: 10px;
       margin-top: 10px;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
-  
-    .nav-item.rectangle {
-      width: 100%;
-    }
-  
-    .logo {
-      margin-bottom: 10px;
-    }
   }
-  
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-item.rectangle {
+      width: 100%;
+  }
+
+  .logo {
+      margin-bottom: 10px;
+  }
+}
+
+/* White Box Style for Download Section */
+.white-box {
+  background-color: white;
+  border: 3px solid #333; /* dark gray */
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Download Button Style */
+.download-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff5722; /* Orange */
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #e64a19; /* Darker Orange */
+}
