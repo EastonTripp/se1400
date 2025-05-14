@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lore - Ink & Ignition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="nav-bar">
+      <div class="logo"></div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav class="nav-links">
+        <div class="nav-item rectangle"><a href="index.html">Home</a></div>
+        <div class="nav-item rectangle"><a href="gameplay.html">Gameplay</a></div>
+        <div class="nav-item rectangle"><a href="lore.html">Lore</a></div>
+        <div class="nav-item rectangle"><a href="features.html">Features</a></div>
+      </nav>
+    </header>
+
+    <section class="content-section">
+      <h2>Worldbuilding & Lore</h2>
+      <div class="content-grid">
+        <div class="text-box">
+          <h3>The Painted Realms</h3>
+          <p>Ink & Ignition takes place in a vibrant world where colors fuel power, and legendary racers are known as Chromatic Pilots. Cities pulse with neon life, and underground circuits control the fate of districts. Players uncover hidden stories behind each track, rival crews, and their own racer legacy.</p>
+        </div>
+        <div class="image-box">
+          <img src="lore-concept.jpg" alt="Lore Concept Art">
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-text">
+      <p>&copy; 2025 JEMM Studios - Ink & Ignition. All Rights Reserved. | <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </div>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
